@@ -100,13 +100,14 @@ sql database
 DATABASE_URL=""sql 
 
 for postgresqlc change prisma model
-# DATABASE_URL_UNPOOLED="postgresql://neondb_owner:kMm4nDFCU2Wx@ep-lucky-night-a599ve5u.us-east-2.aws.neon.tech/neondb?sslmode=require"
-
 
 //Go to livekit
 LIVEKIT_API_URL=""
+
 LIVEKIT_API_KEY=""
+
 LIVEKIT_API_SECRET=""
+
 NEXT_PUBLIC_LIVEKIT_WS_URL=""
 
 
