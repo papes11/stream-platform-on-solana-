@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px; /* Original width */
+    width: 100%;
+    background: #000; /* Black background */
+    padding: 10px; /* Reduced padding */
+    border-radius: 10px; /* Reduced border radius */
+    box-shadow: 3px 4px 0px -1px #f3eeee, -3px 4px 0px -1px #f8f6f6,
+        0px -1px 0px 1px #fff, 0px 5px 0px 0px #111,
+        0px -5px 0px 0.5px #fff, 0px 0px 70px 35px #000;
+    height: 250px; /* Set container height to 300px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the container-inner takes up the full height */
+}
+
+.content {
+    font-family: "Skranji", cursive;
+    background: radial-gradient(#fff, #000); /* White to black radial gradient */
+    padding: 10px; /* Reduced padding */
+    box-sizing: border-box;
+    border-radius: 10px; /* Reduced border radius */
+    box-shadow: 0px 0px 0px 4px #222, 0px 0px 6px 4px #333,
+        inset 0px 0px 10px 0px #444, 3px 3px 0.5px 0.5px #fff,
+        -3px 3px 0.5px 0.5px #fff;
+    text-align: center;
+}
+
+.content p {
+    font-size: 20px; /* Reduced font size */
+    padding: 10px; /* Reduced padding */
+    margin: 0; /* Ensure no additional margin */
+    box-sizing: border-box;
+    color: #fff; /* White text color */
+}
+
+.input-container {
+    position: relative;
+}
+
+.amount-input {
+    margin-top: 10px; /* Add some margin to the input */
+    width: calc(100% - 30px); /* Make the input width responsive */
+    padding: 5px; /* Add padding to the input */
+    font-size: 14px; /* Set font size for input */
+    border-radius: 5px; /* Add border radius to input */
+    border: 1px solid #ccc; /* Add border to input */
+    box-sizing: border-box;
+    position: relative; /* Make input container relative for absolute positioning */
+}
+
+.sol {
+    position: absolute; /* Position the 'sol' text absolutely */
+    top: 65%; /* Align 'sol' vertically */
+    right: 20px; /* Adjust the distance from the right */
+    transform: translateY(-50%); /* Center 'sol' vertically */
+    color: #14e823; /* Set the color of 'sol' */
+}
+
+.buttons {
+    margin-top: 20px; /* Adjust margin top for buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    padding: 10px; /* Button padding */
+    margin: 0 5px; /* Button margin */
+    border-radius: 5px; /* Button border radius */
+    border: 1px solid #fff; /* Button border */
+    font-family: "Skranji", cursive;
+    color: #fff; /* Button text color */
+    font-size: 14px; /* Button font size */
+    
+    cursor: pointer;
+}
+   
+.buttons button.confirm{
+  background-color: transparent; /* Green gradient */
+}
+.buttons button.cancel{
+  background-color:transparent; /* Blue gradient */
+  
+}
+
+
+.buttons button.confirm:hover {
+    background: linear-gradient(#00cc66, #007a33); /* Green gradient */
+    border-color: #007a33; /* Border color change on hover */
+}
+
+.buttons button.cancel:hover {
+    background: linear-gradient(#3385ff, #005bb5); /* Blue gradient */
+    border-color: #005bb5; /* Border color change on hover */
+}

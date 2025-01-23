@@ -1,0 +1,27 @@
+.blinking-text {
+    animation: blinkText 1s infinite;
+}
+
+@keyframes blinkText {
+    0% { color: red; }
+    50% { color: yellow; }
+    100% { color: red; }
+}
+
+.blinking-container {
+    animation: blinkContainer 1s infinite;
+}
+
+@keyframes blinkContainer {
+    0% { border-color: purple; }
+    50% { border-color: red; }
+    100% { border-color: purple; }
+}
+
+.fixed {
+    position: z;
+}
+
+.z-50 {
+    z-index: 50;
+}

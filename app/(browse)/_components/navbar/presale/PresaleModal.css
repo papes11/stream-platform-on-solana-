@@ -1,0 +1,21 @@
+@keyframes slideRightToLeft {
+    0% {
+        transform: translateX(5%);
+        opacity: 0; /* Start with opacity 0 */
+    }
+    5% {
+        opacity: 1; /* Fade in within the first 5% of animation */
+    }
+    95% {
+        opacity: 1; /* Maintain opacity until near the end */
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0; /* Fade out at the end */
+    }
+}
+
+.slide-right-to-left {
+    animation: slideRightToLeft 10s linear infinite;
+    white-space: nowrap; /* Ensures text doesn't wrap */
+}
